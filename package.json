@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "doppler run -- next",
-    "build": " doppler run -- next build",
-    "start": "doppler run -- next start",
+    "build": " next build",
+    "start": "next start",
     "typecheck": "tsc",
     "format": "prettier --write \"**/*.{js,jsx,json,ts,tsx,md}\""
   },
