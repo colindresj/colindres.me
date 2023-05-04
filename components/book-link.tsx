@@ -13,7 +13,7 @@ const BookLink = ({ title, author, link }: Props) => {
           className="border-b-2 border-day-accent text-day-accent hover:bg-day-accent hover:text-day-bg dark:border-night-accent dark:text-night-accent dark:hover:bg-night-accent dark:hover:text-night-bg"
         >
           {title}
-        </a>
+        </a>, {author}
       </h3>
     </div>
   )
