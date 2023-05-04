@@ -10,7 +10,7 @@ import { getPostBySlug, getAllPosts } from '../../lib/api'
 import PostTitle from '../../components/post-title'
 import Waves from '../../components/waves'
 import Head from 'next/head'
-import { CMS_NAME } from '../../lib/constants'
+import { CMS_NAME, REVALIDATE_SEC } from '../../lib/constants'
 import type PostType from '../../interfaces/post'
 
 type Props = {
@@ -60,9 +60,8 @@ export async function getStaticProps({ params }: Params) {
   const post = await getPostBySlug(params.slug)
 
   return {
-    props: {
-      post
-    }
+    props: { post },
+    revalidate: REVALIDATE_SEC
   }
 }
 

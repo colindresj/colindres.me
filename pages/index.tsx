@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 import Footer from '../components/footer'
 import { getAllPosts, getAllBooks } from '../lib/api'
 import Head from 'next/head'
-import { CMS_NAME } from '../lib/constants'
+import { CMS_NAME, REVALIDATE_SEC } from '../lib/constants'
 import Post from '../interfaces/post'
 import Book from '../interfaces/book'
 
@@ -41,6 +41,6 @@ export const getStaticProps = async () => {
 
   return {
     props: { allPosts, allBooks },
-    revalidate: 30 // In seconds
+    revalidate: REVALIDATE_SEC
   }
 }
