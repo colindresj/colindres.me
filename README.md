@@ -4,4 +4,4 @@
 
 ## How
 
-- Deploy via Git push to Netlify
+- Deploy via Git push to Vercel
