@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { AppProps } from 'next/app'
 import dynamic from 'next/dynamic'
+import { Analytics } from '@vercel/analytics/react';
+import NextProgressBar from 'nextjs-progressbar'
 import { isDarkMode } from '../lib/util'
 import '../styles/index.css'
-import NextProgressBar from 'nextjs-progressbar'
 
 export default function MyApp({ Component, pageProps }: AppProps) {
   const [color, setColor] = useState('')
@@ -16,6 +17,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <NextProgressBar color={color} height={2} />
       <Component {...pageProps} />
+      <Analytics />
     </>
   )
 }
