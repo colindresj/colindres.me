@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-feature-settings: "liga", "clig", "dlig", "frac", "ss01";
+  font-variant-ligatures: common-ligatures;
+}
+
+code {
+  font-size: 0.8rem !important;
+}
+
+.waves {
+  width: 50px;
+}
+
+.waves > path {
+  stroke-width: 1200px;
+  fill: none;
+}
