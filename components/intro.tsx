@@ -17,11 +17,11 @@ const Intro = () => {
           >
             AlleyCorp
           </a>
-          , an NYC-based venture studio and investment firm. I spend most of my
-          time working with founders, and thinking about new startups. Before
-          AlleyCorp, I worked as a software engineer at a couple of
-          venture-backed early-stage companies. I was on the founding team of
-          Workframe (acquired NYSE:NMRK), an AlleyCorp incubation.
+          , an NYC-based venture studio and investment firm. I spend a lot of
+          my time working with founders and thinking about new startups. Before
+          AlleyCorp, I worked as a software engineer at a few venture-backed
+          early-stage companies. I was on the founding team of Workframe
+          (acquired NYSE:NMRK), an AlleyCorp incubation.
         </p>
         <p>
           I received a BS and a BA from Boston University, as well as an MBA
