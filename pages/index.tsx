@@ -24,8 +24,7 @@ export default function Index({ allPosts, allBooks }: Props) {
         </Head>
         <Container>
           <>
-            <Intro />
-            {allPosts.length > 0 && <Thoughts posts={allPosts} />}
+            <Intro />            
             {allBooks.length > 0 && <Books books={allBooks} />}
             <Footer />
           </>
